@@ -115,6 +115,26 @@ footer h1 {
   
  
 }
+footer .box{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  position:absolute;
+  left:0;
+  bottom:0;
+  width:100%;
+  img{
+    height:150px;
+     object-fit: cover;
+  object-position: top center;
+    z-index: -1;
+  }
+}
+@media (max-width:1000px) {
+  footer .box{
+  display: none;
+}
+}
 @media (max-width:500px) {
 
 .tree{
@@ -130,4 +150,5 @@ header{
 footer h1{
   font-size: 20px;
 }
+
 }
